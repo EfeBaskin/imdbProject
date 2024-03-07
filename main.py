@@ -132,7 +132,7 @@ class Gui(ctk.CTk):
         elif button_text == "Show Metascore":
             selected_movie_name = self.NamesOptionMenu.get()
             metascore_data_for_selected_movie = get_metascore_data(selected_movie_name)
-            self.displayBox.delete(1.0, ctk.END)  # Clear the displayBox
+            self.displayBox.delete(1.0, ctk.END)
             self.displayBox.insert(ctk.END, f"{selected_movie_name}'s metascore is {metascore_data_for_selected_movie}")
 
         elif button_text == "Show Gross":
